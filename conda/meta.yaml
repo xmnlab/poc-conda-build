@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: generic
-  number: "{{ environ.get('GIT_DESCRIBE_NUMBER', 0) }}"
+  number: {{ environ.get('GIT_DESCRIBE_NUMBER', 0) }}
 
 requirements:
   run:
