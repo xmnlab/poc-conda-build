@@ -1,0 +1,30 @@
+{% set name = "poc-conda-build" %}
+{% set version = "0.1.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+build:
+  noarch: generic
+  number: {{ environ.get('GIT_DESCRIBE_HASH', 0) }}
+
+requirements:
+  run:
+    - python
+
+test:
+  command:
+    - python --version
+
+about:
+  home: https://github.com/xmnlab/poc
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: 'POC for conda build recipe'
+
+extra:
+  recipe-maintainers:
+    - xmnlab
+
