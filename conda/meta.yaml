@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  git_url: .
+  git_url: ../
 
 build:
   noarch: generic
@@ -24,7 +24,7 @@ about:
   home: https://github.com/xmnlab/poc
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: ../LICENSE
   summary: 'POC for conda build recipe'
 
 extra:
