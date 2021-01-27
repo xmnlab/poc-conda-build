@@ -2,13 +2,13 @@ name: conda-build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   macos:
 
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 10
     strategy:
       matrix:
         python-version: [3.7]
